@@ -4,12 +4,13 @@
   "description": "Reasonable ESLint, and TypeScript configs for JavaScript/TypeScript devs",
   "bugs": "https://github.com/devjskit/eslint-config/issues",
   "main": "index.js",
-  "module":"index.mjs",
+  "module": "index.mjs",
   "prettier": "prettier-config-devjskit",
   "author": "Billgo <hi@billgo.me>",
   "license": "MIT",
   "keywords": [
     "eslint",
+    "prettier",
     "typescript"
   ],
   "files": [
@@ -50,7 +51,7 @@
   "peerDependencies": {
     "eslint": "*",
     "prettier": "*",
-    "typescript": "*"
+    "typescript": "^5.4.5"
   },
   "publishConfig": {
     "access": "public",
