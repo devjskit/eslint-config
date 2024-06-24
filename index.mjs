@@ -1,13 +1,13 @@
-const globals = require("globals");
-const pluginHtml = require("eslint-plugin-html");
-const pluginImport = require("eslint-plugin-import");
-const pluginReactHooks = require("eslint-plugin-react-hooks");
-const pluginPrettier = require("eslint-plugin-prettier");
-const prettierRecommended = require("eslint-plugin-prettier/recommended");
-const pluginTypescript = require("@typescript-eslint/eslint-plugin");
-const parserTypescript = require("@typescript-eslint/parser");
+import pluginTypescript from "@typescript-eslint/eslint-plugin";
+import parserTypescript from "@typescript-eslint/parser";
+import pluginHtml from "eslint-plugin-html";
+import pluginImport from "eslint-plugin-import";
+import pluginPrettier from "eslint-plugin-prettier";
+import prettierRecommended from "eslint-plugin-prettier/recommended";
+import pluginReactHooks from "eslint-plugin-react-hooks";
+import globals from "globals";
 
-module.exports = [
+export default [
   prettierRecommended,
   {
     ignores: [
