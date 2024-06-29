@@ -143,7 +143,7 @@ module.exports = [
       "@typescript-eslint": pluginTypescript,
     },
     rules: {
-      "import/consistent-type-specifier-style": ["warn", "prefer-inline"],
+      "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
       "@typescript-eslint/no-unused-vars": [
         "warn",
         {
@@ -158,7 +158,7 @@ module.exports = [
         {
           prefer: "type-imports",
           disallowTypeAnnotations: true,
-          fixStyle: "inline-type-imports",
+          fixStyle: "separate-type-imports",
         },
       ],
       "@typescript-eslint/ban-types": "off",

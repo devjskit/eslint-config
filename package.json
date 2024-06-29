@@ -1,10 +1,11 @@
 {
   "name": "eslint-config-devjskit",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Reasonable ESLint, and TypeScript configs for JavaScript/TypeScript devs",
   "bugs": "https://github.com/devjskit/eslint-config/issues",
   "main": "index.js",
   "module": "index.mjs",
+  "types": "index.d.ts",
   "prettier": "prettier-config-devjskit",
   "author": "Billgo <hi@billgo.me>",
   "license": "MIT",
@@ -16,6 +17,7 @@
   "files": [
     "./index.js",
     "./index.mjs",
+    "./index.d.ts",
     "./typescript.json"
   ],
   "imports": {
@@ -28,8 +30,8 @@
     "publish:beta": "npm publish --tag beta"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.13.1",
-    "@typescript-eslint/parser": "^7.13.1",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-html": "^8.1.1",
     "eslint-plugin-import": "^2.29.1",
@@ -43,14 +45,14 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
-    "eslint": "^9.5.0",
+    "eslint": "^9.6.0",
     "prettier": "^3.3.2",
-    "prettier-config-devjskit": "^3.0.4",
+    "prettier-config-devjskit": "^3.0.5",
     "release-it": "^17.4.0"
   },
   "peerDependencies": {
-    "eslint": "*",
-    "prettier": "*",
+    "eslint": "^9.0",
+    "prettier": "^3.0",
     "typescript": "^5.4.5"
   },
   "publishConfig": {
